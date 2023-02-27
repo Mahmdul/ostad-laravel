@@ -1,0 +1,32 @@
+//Task 2: Basic OOP in PHP
+<?php
+class Person{
+    public $name;
+    public $email;
+    
+    public function setName($name){
+        $this->name = $name;
+
+    }
+
+    public function setEmail($email){
+        $this->email = $email;
+
+    }
+
+    public function getName(){
+        $this->name;
+    }
+
+    public function getEmail(){
+        $this->email;
+    }
+    public function display_info(){
+        echo "Name: " . $this->name . "<br>";
+        echo "Email: " . $this->email . "<br>";
+        
+    }
+}
+
+$obj = new Person("Mahmudul Alam", "mahmudulalam186@gmail.com");
+$obj->display_info();
